@@ -4,7 +4,7 @@ This action deploys a PostgreSQL RDS instance using Terraform.
 
 ## Inputs
 
-- `aws_region`: AWS region (default: 'us-west-2')
+- `aws_region`: AWS region (default: 'ap-southeast-2')
 - `instance_class`: RDS instance class (default: 'db.t3.micro')
 - `db_name`: Database name
 - `db_username`: Database username
@@ -22,7 +22,7 @@ This action deploys a PostgreSQL RDS instance using Terraform.
 - name: Deploy RDS Instance
   uses: demodso/org-action-rds-deploy@v1
   with:
-    aws_region: "us-west-2"
+    aws_region: "ap-southeast-2"
     instance_class: "db.t3.micro"
     db_name: "mydb"
     db_username: ${{ secrets.DB_USERNAME }}

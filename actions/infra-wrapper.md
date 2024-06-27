@@ -4,7 +4,7 @@ This wrapper action deploys an RDS instance, an EC2 instance, and installs the P
 
 ## Inputs
 
-- `aws_region`: AWS region (default: 'us-west-2')
+- `aws_region`: AWS region (default: 'ap-southeast-2')
 - `rds_instance_class`: RDS instance class (default: 'db.t3.micro')
 - `db_name`: Database name
 - `db_username`: Database username
@@ -30,7 +30,7 @@ This wrapper action deploys an RDS instance, an EC2 instance, and installs the P
 - name: Deploy Infrastructure
   uses: demodso/org-action-infra-wrapper@v1
   with:
-    aws_region: "us-west-2"
+    aws_region: "ap-southeast-2"
     rds_instance_class: "db.t3.micro"
     db_name: "mydb"
     db_username: ${{ secrets.DB_USERNAME }}
